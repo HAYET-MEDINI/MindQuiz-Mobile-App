@@ -11,20 +11,22 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class playActivity extends AppCompatActivity {
-    String[] question_list = {"Quel numéro est indissociable du footballeur Cristiano Ronaldo ?",
-            "D’où est originaire le footballeur portugais Cristiano Ronaldo ?","quel pays Cristiano Ronaldo n’a-t-il jamais été membre d’un club ?"
-            ,"Dans quel club de foot Cristiano Ronaldo est-il resté le plus longtemps en continu ?",
-           "Combien de Ligue des Champions Cristiano Ronaldo a-t-il remporté durant sa carrière madrilène de 2009 à 2018 ?"
+    String[] question_list = {
+            "Qu'est-ce qu'un système réparti ?",
+            "Quel est un exemple connu d'outil utilisé pour traiter de grandes quantités de données dans un système réparti ?",
+            "Dans un système réparti, pourquoi utilise-t-on plusieurs ordinateurs ?",
+            "Quelle entreprise a créé la base de données distribuée appelée Bigtable ?",
+            "Combien d'ordinateurs sont généralement nécessaires pour qu'un système réparti continue de fonctionner si un ordinateur tombe en panne ?"
     };
-    String[] choose_list = {"3","7","14","19",
-            "porto","lisboone","madère","fato",
-            "italie","allemagne","espagne","angleterre",
-            "juventus","united","barcelone","madrid",
-            "1","2","4","5"
+    String[] choose_list = {
+            "Un seul ordinateur puissant", "Plusieurs ordinateurs qui travaillent ensemble", "Un logiciel de bureau", "Un réseau Wi-Fi", // Choix pour la définition
+            "Hadoop", "Microsoft Word", "Photoshop", "Calculatrice",           // Choix pour l'outil
+            "Pour réduire les coûts", "Pour partager le travail", "Pour utiliser moins d'énergie", "Pour avoir plus de câbles", // Choix pour l'utilisation
+            "Google", "Apple", "Netflix", "IBM",                              // Choix pour l'entreprise
+            "1", "2", "3", "4"                                               // Choix pour les ordinateurs
     };
-    String[] correct_list = {"7","madère","allemagne","madrid","4"};
 
-
+    String[] correct_list = {"Plusieurs ordinateurs qui travaillent ensemble", "Hadoop", "Pour partager le travail", "Google", "3"};
     TextView cpt_question , text_question;
     Button btn_choose1 , btn_choose2 , btn_choose3 , btn_choose4 , btn_next;
 

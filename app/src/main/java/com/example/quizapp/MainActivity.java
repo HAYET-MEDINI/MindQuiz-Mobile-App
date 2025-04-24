@@ -20,10 +20,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_play:
                 startActivity(new Intent(MainActivity.this , playActivity.class));
                 break;
-            case R.id.btn_setting:
-                startActivity(new Intent(MainActivity.this , settingActivity.class));
-
-                break;
             case R.id.btn_exit:
                 this.finishAffinity();
                 break;
